@@ -1,20 +1,44 @@
 package com.savio.helpdesk.domain;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import javax.persistence.CollectionTable;
+import javax.persistence.Column;
+import javax.persistence.ElementCollection;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.savio.helpdesk.domain.enums.Perfil;
 
-public abstract class Pessoa {
+@Entity//classe pessoa entidade criando tabela para classe pessoa 
+public abstract class Pessoa implements Serializable {
+	private static final long serialVersionUID = 1L;
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY) // essa chave id não e minha responsabilidade e do banco para cada objeto o banco gera um id diferente
 	protected Integer id;
 	protected String nome;
+	
+	@Column(unique = true)//coluna unica nao vai existir dois cpfs 
 	protected String cpf;
+	
+	@Column(unique = true)
 	protected String email;
 	protected String senha;
+	
+	@ElementCollection(fetch = FetchType.EAGER)// informando uma coleçao do elemento do tipo inteiro vai vim com perfil junto com o usuario
+	@CollectionTable(name = "PERFIS")//tabela apenas com perfis
 	protected Set<Integer> perfis = new HashSet<>(); //Aqui vou armazenar o codigo do perfil daquela pessoa 
+	
+	@JsonFormat(pattern = "dd/MM/yyyy" )
 	protected LocalDate dataCriacao = LocalDate.now();
 	
 	public Pessoa() {
