@@ -6,6 +6,7 @@ import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.savio.helpdesk.domain.enums.Perfil;
 
 @Entity
@@ -13,6 +14,7 @@ import com.savio.helpdesk.domain.enums.Perfil;
 public class Cliente extends Pessoa{ //A classe cliente estende a classe pessoa
 	private static final long serialVersionUID = 1L;
 	
+	@JsonIgnore
 	@OneToMany(mappedBy = "cliente")//Aqui mapeamos o tecnico do outro lado
 	private List<Chamado> chamados = new ArrayList<>();
 
