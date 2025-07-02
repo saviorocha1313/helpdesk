@@ -21,7 +21,7 @@ public class TecnicoResource {
 	private TecnicoService service;
 	
 	@GetMapping(value = "/{id}")
-	public ResponseEntity<TecnicoDTO> findById(@PathVariable Integer id){ // Controla o http
+	public ResponseEntity<TecnicoDTO> findById(@PathVariable Integer id){ //Retorno o tecnico dto objeto de transferencia de dados e Controla o http
 		Tecnico obj = service.findById(id);
 		return ResponseEntity.ok().body(new TecnicoDTO(obj));
 	}
