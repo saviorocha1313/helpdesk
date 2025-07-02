@@ -3,7 +3,7 @@ package com.savio.helpdesk.resources.exceptions;
 import java.io.Serializable;
 
 public class StandardError implements Serializable {
-	private static final long serialVersionUID = 1L; //Boas praticas para tratamento de exceção
+	private static final long serialVersionUID = 1L; //Boas praticas para tratamento de exceção e metodos adicionados
 	
 	private Long timestamp;
 	private Integer status;
