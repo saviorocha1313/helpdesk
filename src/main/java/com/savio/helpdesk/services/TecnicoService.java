@@ -18,7 +18,7 @@ public class TecnicoService {
 
     // Método para buscar técnico pelo ID
     public Tecnico findById(Integer id) {
-        Optional<Tecnico> obj = repository.findById(id); // Busca técnico no repositório
+        Optional<Tecnico> obj = repository.findById(id); // Metodo que Busca o técnico no repositório
         return obj.orElseThrow(() -> 
             new ObjectnotFoundException("Objeto não encontrado! Id: " + id + ", Tipo: " + Tecnico.class.getName(), null)
         ); // Lança exceção se não encontrar objeto
