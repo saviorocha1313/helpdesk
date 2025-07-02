@@ -1,0 +1,71 @@
+[33mcommit 4e76122e271dfd9ceab53dc1392864f2bc5acf49[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: saviorocha1313 <saviorocha1.3@gmail.com>
+Date:   Wed Jul 2 01:29:48 2025 -0300
+
+    Exceptions Services
+
+[33mcommit 677e1e801f338343cebb16a13124e4c54ce2501b[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: saviorocha1313 <saviorocha1.3@gmail.com>
+Date:   Mon Apr 21 02:46:10 2025 -0300
+
+    Padrão DTO para Tecnico
+
+[33mcommit e5d680fd322cba5ac42effeabdc2aa9582c341fa[m
+Author: saviorocha1313 <saviorocha1.3@gmail.com>
+Date:   Mon Apr 21 00:50:05 2025 -0300
+
+    endpoint findById para Tecnico
+
+[33mcommit f21e8cb506607c20584ecfd422c12098be0213c1[m
+Author: saviorocha1313 <saviorocha1.3@gmail.com>
+Date:   Mon Apr 21 00:47:26 2025 -0300
+
+    Melhorias contra a serialização
+
+[33mcommit 9016f56fc76918173e26dc587625bf06e2cf3873[m
+Author: saviorocha1313 <saviorocha1.3@gmail.com>
+Date:   Sun Apr 20 21:35:00 2025 -0300
+
+    perfil de desenvolvimento
+
+[33mcommit 2cd8af23a8e26dd32e1cb6f63d5d5924646c4bdd[m
+Author: saviorocha1313 <saviorocha1.3@gmail.com>
+Date:   Sun Apr 20 20:34:26 2025 -0300
+
+    Perfil de teste criado
+
+[33mcommit 208431be7c0c565adc6348f2b33b38000b6de078[m
+Author: saviorocha1313 <saviorocha1.3@gmail.com>
+Date:   Sun Apr 20 19:33:43 2025 -0300
+
+    carga inicial da base de dados
+
+[33mcommit 8a74d4e20b8cc6a319b6db497071bf45dc7faa5f[m
+Author: saviorocha1313 <saviorocha1.3@gmail.com>
+Date:   Sun Apr 20 19:32:15 2025 -0300
+
+    repositories criados
+
+[33mcommit a26af4fb695cb5c2f62fcf744fd1e6df035f5010[m
+Author: saviorocha1313 <saviorocha1.3@gmail.com>
+Date:   Sun Apr 13 04:10:21 2025 -0300
+
+    anotaçoes JPA para classes de dominio
+
+[33mcommit 6a28205e23ef21ac99d9b66174ee20de7d83905e[m
+Author: saviorocha1313 <saviorocha1.3@gmail.com>
+Date:   Sun Apr 13 02:49:34 2025 -0300
+
+    classes de dominio iniciadas
+
+[33mcommit 91245d0eea4abdcbc3698314c95ec6ef723023e0[m
+Author: saviorocha1313 <saviorocha1.3@gmail.com>
+Date:   Sun Apr 13 01:14:22 2025 -0300
+
+    tipos enumerados criados
+
+[33mcommit f4a330a8756491cae70e9d81a9182f0d34c5f203[m
+Author: saviorocha1313 <saviorocha1.3@gmail.com>
+Date:   Sat Apr 12 23:55:29 2025 -0300
+
+    projeto iniciado
