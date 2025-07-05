@@ -1,6 +1,6 @@
-
 package com.savio.helpdesk.services;
 
+import java.util.List;
 import java.util.Optional;
 
 import com.savio.helpdesk.services.exceptions.ObjectnotFoundException;
@@ -22,6 +22,11 @@ public class TecnicoService {
         return obj.orElseThrow(() -> 
             new ObjectnotFoundException("Objeto não encontrado! Id: " + id + ", Tipo: " + Tecnico.class.getName(), null)
         ); // Lança exceção se não encontrar objeto
-    }
+        
+        }
+
+	public List<Tecnico> findAll() {
+		return repository.findAll();
+	}
 }
 
