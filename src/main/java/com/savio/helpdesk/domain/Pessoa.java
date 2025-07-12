@@ -51,7 +51,7 @@ public abstract class Pessoa implements Serializable {
     //  Construtor padrão
     public Pessoa() {
         super();
-        addPerfis(Perfil.CLIENTE); // 👤 Garante que toda pessoa comece com perfil CLIENTE por padrão
+        addPerfis(Perfil.CLIENTE); //  Garante que toda pessoa comece com perfil CLIENTE por padrão
     }
 
     //  Construtor completo — usado para criar objetos com dados iniciais
