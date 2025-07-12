@@ -1,4 +1,4 @@
-package com.savio.helpdesk.resources; // aqui não vamos delegar serviços para o banco de dados 
+package com.savio.helpdesk.resources; // // Aqui usamos o controller para expor endpoints REST e delegar as ações ao service
 
 import java.util.List;
 import java.util.stream.Collectors;
