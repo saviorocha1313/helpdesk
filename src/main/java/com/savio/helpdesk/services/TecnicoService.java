@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 //  Anotações Spring para definir este bean como um serviço
 
 import com.savio.helpdesk.domain.Tecnico;
+import com.savio.helpdesk.domain.dtos.TecnicoDTO;
 import com.savio.helpdesk.repositories.TecnicoRepository;
 
 @Service //  Indica que essa classe é um componente de serviço do Spring
@@ -35,6 +36,12 @@ public class TecnicoService {
     public List<Tecnico> findAll() {
         return repository.findAll(); //  Retorna a lista completa direto do repository
     }
+
+	public Tecnico create(TecnicoDTO objDTO) {
+		objDTO.setId(null);
+		Tecnico newObj = new Tecnico(objDTO);
+		return repository.save(newObj); //Salva no banco e retorna como id 
+	}
 }
 
 
