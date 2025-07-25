@@ -1,4 +1,4 @@
-# 🚀 Sistema Web de Help Desk Fullstack
+# 🚀 Sistema Web de Help Desk Fullstack / Back End
 
 Este projeto que eu elaborei tem como objetivo mostrar uma aplicação completa de Help Desk, utilizando tecnologias modernas e práticas de mercado. O sistema permite que microempresas abram e gerenciem suas ordens de serviço através de uma interface web intuitiva e robusta.
 
