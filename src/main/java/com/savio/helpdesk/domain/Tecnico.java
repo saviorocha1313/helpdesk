@@ -16,7 +16,7 @@ import com.savio.helpdesk.domain.dtos.TecnicoDTO;
 import com.savio.helpdesk.domain.enums.Perfil;
 //  Enum que representa os perfis (ADMIN, CLIENTE, etc.)
 
-@Entity //  Define que essa classe será mapeada como tabela no banco
+@Entity //  Define que essa classe será mapeada como tabela no banco.
 public class Tecnico extends Pessoa {
     //  Representa o técnico que irá atender chamados
     //  Herdando os atributos e métodos comuns da classe Pessoa

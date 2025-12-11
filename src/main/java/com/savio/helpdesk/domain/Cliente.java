@@ -39,6 +39,17 @@ public class Cliente extends Pessoa {
         addPerfis(Perfil.CLIENTE); // 🔐 Define automaticamente o perfil ao instanciar
     }
 
+    public Cliente(com.savio.helpdesk.domain.dtos.ClienteDTO obj) {
+        super();
+        this.id = obj.getId();
+        this.nome = obj.getNome();
+        this.cpf = obj.getCpf();
+        this.email = obj.getEmail();
+        this.senha = obj.getSenha();
+        this.perfis = obj.getPerfis().stream().map(x -> x.getCodigo()).collect(java.util.stream.Collectors.toSet());
+        this.dataCriacao = obj.getDataCriacao();
+    }
+
     //  Getters e setters para acessar os chamados do cliente
     public List<Chamado> getChamados() {
         return chamados;
